@@ -19,7 +19,25 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
 
           script: |
+            # Install Node.js & npm if not installed
+            if ! command -v node > /dev/null; then
+              sudo apt update
+              sudo apt install -y nodejs npm
+            fi
+
+            # Install PM2 if not installed
+            if ! command -v pm2 > /dev/null; then
+              sudo npm install -g pm2
+            fi
+
+            # Go to project directory
             cd ~/frontend/FEMFrotend-main/FEMFrotend-main
+
+            # Pull latest code
             git pull origin master
+
+            # Install dependencies
             npm install
+
+            # Restart or start app
             pm2 restart frontend || pm2 start app.js --name frontend
