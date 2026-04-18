@@ -1,0 +1,125 @@
+
+
+.login-page-component {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(17, 36, 47, 0.20) 0%, rgba(3, 40, 63, 0.30) 100%), url(../riverrock-waterfall-image.jpg) lightgray -0.725px 0px / 100.101% 96.819% no-repeat;
+    background-size: cover;
+}
+.login-wrapper {
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Dashboard */
+
+.dashboard-card-component svg {
+    max-width: 20px !important;
+}
+.dashboard-card-component {
+    background: #EBF8FE;
+}
+.dashboard-card-component:first-child {
+    background: url(../card-folder-1.svg) no-repeat 0 0 / contain;
+}
+.dashboard-card-component:nth-child(2) {
+    background: url(../card-folder-2.svg) no-repeat 0 0 / contain;
+}
+.dashboard-card-component:nth-child(3) {
+    background: url(../card-folder-3.svg) no-repeat 0 0 / contain;
+}
+.dashboard-card-component:nth-child(4) {
+    background: url(../card-folder-4.svg) no-repeat 0 0 / contain;
+}
+.dashboard-card-component:nth-child(5) {
+    background: url(../card-folder-5.svg) no-repeat 0 0 / contain;
+}
+
+.dashboard-card-component > .flex {
+    border-radius: 6px;
+    background: #FFF;
+    border: 1px solid #C4E3F2;
+}
+.dashboard-card-component:first-child > .flex {
+}
+.dashboard-card-component:nth-child(2) > .flex {
+    border-color: #D4D8F8;
+}
+.dashboard-card-component:nth-child(3) > .flex {
+    border-color: #CAEBD6;
+}
+.dashboard-card-component:nth-child(4) > .flex {
+    border-color: #F2C754;
+}
+.dashboard-card-component:nth-child(5) > .flex {
+    border-color: #F6D1D1;
+}
+h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    color: #03283F;
+    margin-bottom: 5px;
+}
+h2 {
+    color: #1B4F6E;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 188.235% */
+}
+.heading p {
+    color: #5B5C5E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+/* Form Default Component  */
+.form-default-component h2 {
+    color: #1B4F6E;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+}
+.form-default-component label {
+    color: #6D7C86;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-default-component input,
+.form-default-component textarea,
+.form-default-component select,
+.form-default-component .input-box {
+    border-radius: 5px;
+    border: 1px solid #D2E1E9;
+    outline: 0;
+    background: #F1FAFF;
+    color: #66747C;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (max-width:1024px) {
+    h1 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .heading p {
+        font-size: 14px;
+    }
+    
+}
