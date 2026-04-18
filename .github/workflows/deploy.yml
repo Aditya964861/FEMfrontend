@@ -33,7 +33,10 @@ jobs:
             echo "📦 Installing dependencies..."
             npm ci
 
-            echo "🚀 Restarting app..."
-            pm2 restart frontend || pm2 start app.js --name frontend
+            echo "🏗️ Building project..."
+            npm run build
+
+            echo "🚀 Starting frontend..."
+            pm2 restart frontend || pm2 start serve --name frontend -- -s dist -l 3000
 
             echo "✅ Deployment done"
